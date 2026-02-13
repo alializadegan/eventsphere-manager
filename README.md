@@ -1,5 +1,14 @@
 # EventSphere Manager
 
+![WordPress](https://img.shields.io/badge/WordPress-6.x-blue)
+![PHP](https://img.shields.io/badge/PHP-8.x-purple)
+![License](https://img.shields.io/badge/license-GPLv2-green)
+![Status](https://img.shields.io/badge/status-production-ready-brightgreen)
+
+Author: Ali Alizadegan
+
+# EventSphere Manager
+
 Author: Ali Alizadegan  
 License: GPLv2 or later  
 Requires at least: WordPress 6.0  

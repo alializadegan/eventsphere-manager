@@ -1,0 +1,17 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Event Manager CLI 1.0.1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: \n"
+
+msgid "Events"
+msgstr ""
+
+msgid "Event"
+msgstr ""
+
+msgid "Event Types"
+msgstr ""
+
+msgid "Event Details"
+msgstr ""

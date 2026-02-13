@@ -1,0 +1,66 @@
+EventSphere Manager — راهنمای نصب و اجرا
+=======================================
+
+1) نصب پلاگین
+-------------
+- فایل zip را دانلود کنید.
+- پوشه `eventsphere-manager` را داخل مسیر زیر قرار دهید:
+  wp-content/plugins/
+- سپس در پیشخوان وردپرس > Plugins پلاگین را Activate کنید.
+
+2) بعد از نصب چه چیزهایی آماده است؟
+-----------------------------------
+- آرشیو پیش‌فرض رویدادها:
+  /events
+- پلاگین همچنین یک برگه کمکی می‌سازد:
+  /events-list
+  که داخلش [event_list] قرار دارد.
+  (اسلاگ را عمداً events نگذاشتیم چون با آرشیو CPT تداخل پیدا می‌کند.)
+
+3) فیلتر/سرچ (UI-based + AJAX)
+------------------------------
+- فیلترها در خود صفحه نمایش داده می‌شوند و با Query String کار می‌کنند:
+  ?s=design&type=meetup&from=2026-01-01&to=2026-12-31&status=upcoming&sort=date_desc
+- فیلترها هم روی /events و هم روی /events-list وجود دارند.
+- فیلترها به صورت AJAX هم کار می‌کنند (بدون رفرش). اگر JS خاموش باشد، با reload کار می‌کند.
+
+4) Status
+---------
+- رویدادها بر اساس تاریخ، وضعیت دارند:
+  - upcoming: تاریخ >= امروز
+  - past: تاریخ < امروز
+- در کارت‌ها و صفحه داخلی badge نمایش داده می‌شود.
+- پیش‌فرض لیست‌ها فقط upcoming را نشان می‌دهد (قابل تغییر از UI).
+
+5) Featured Image
+-----------------
+- برای publish کردن Event، تصویر شاخص لازم است.
+- اگر بدون تصویر شاخص publish کنید، پست به Draft تبدیل می‌شود و پیام خطا نمایش داده می‌شود.
+
+6) Settings
+-----------
+- مسیر:
+  Events → Settings
+- گزینه‌ها:
+  - Events per page
+  - Email notifications on/off
+  - Default location suggestions (one per line)
+
+7) RSVP
+-------
+- در صفحه داخلی هر Event فرم RSVP وجود دارد.
+- ارسال دوباره با همان ایمیل برای همان event تکراری حساب نمی‌شود.
+
+8) REST API
+-----------
+- ثبت RSVP:
+  POST /wp-json/wpemcli/v1/events/{id}/rsvp
+- شمارش RSVP:
+  GET  /wp-json/wpemcli/v1/events/{id}/rsvp-count
+
+9) WP-CLI (اختیاری)
+-------------------
+- ایجاد/اطمینان از برگه کمکی:
+  wp wpem install
+- ساخت دیتا نمونه:
+  wp wpem seed --count=10

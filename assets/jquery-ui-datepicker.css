@@ -1,0 +1,14 @@
+.ui-datepicker{width:17em;padding:.2em .2em 0;display:none;border:1px solid rgba(0,0,0,.15);background:#fff;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.12);font-size:13px}
+.ui-datepicker .ui-datepicker-header{position:relative;padding:.35em 0;border-bottom:1px solid rgba(0,0,0,.08);border-top-left-radius:10px;border-top-right-radius:10px}
+.ui-datepicker .ui-datepicker-prev,.ui-datepicker .ui-datepicker-next{position:absolute;top:6px;width:1.8em;height:1.8em;border-radius:8px;cursor:pointer;text-indent:-9999px;overflow:hidden}
+.ui-datepicker .ui-datepicker-prev{left:6px}.ui-datepicker .ui-datepicker-next{right:6px}
+.ui-datepicker .ui-datepicker-prev:before,.ui-datepicker .ui-datepicker-next:before{text-indent:0;position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#111;font-weight:700;font-size:14px}
+.ui-datepicker .ui-datepicker-prev:before{content:"‹"}.ui-datepicker .ui-datepicker-next:before{content:"›"}
+.ui-datepicker .ui-datepicker-title{margin:0 2.3em;line-height:1.8em;text-align:center;font-weight:600}
+.ui-datepicker table{width:100%;border-collapse:collapse;margin:0 0 .25em}
+.ui-datepicker th{padding:.5em .3em;text-align:center;font-weight:600;color:rgba(0,0,0,.65)}
+.ui-datepicker td{border:0;padding:0}
+.ui-datepicker td a,.ui-datepicker td span{display:block;padding:.45em .35em;text-align:center;text-decoration:none;border-radius:8px;margin:2px}
+.ui-datepicker td a:hover{background:rgba(0,0,0,.06)}
+.ui-datepicker .ui-state-active{background:#2271b1;color:#fff}
+.ui-datepicker select.ui-datepicker-month,.ui-datepicker select.ui-datepicker-year{width:auto;margin:0 2px}

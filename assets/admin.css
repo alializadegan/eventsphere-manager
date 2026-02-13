@@ -1,0 +1,31 @@
+
+#wpem_event_details .regular-text{ max-width: 520px; }
+
+
+.ui-datepicker,
+.ui-autocomplete{ z-index: 999999 !important; }
+
+
+.ui-autocomplete{
+  background:#fff;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
+  padding:6px;
+  max-height:240px;
+  overflow:auto;
+}
+
+.ui-menu .ui-menu-item-wrapper{
+  padding:10px 12px;
+  border-radius:10px;
+  line-height:1.2;
+}
+
+.ui-menu .ui-state-active,
+.ui-menu .ui-menu-item-wrapper.ui-state-active{
+  border:none;
+  background:rgba(34,113,177,.12);
+  color:#1d2327;
+  margin:0;
+}
